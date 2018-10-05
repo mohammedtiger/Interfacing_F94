@@ -7,7 +7,7 @@
 #define F94_SETBIT(Reg,Pin) (Reg |= (1 << Pin))
 #define F94_CLEARBIT(Reg,Pin) (Reg &=~ (1 << Pin))
 #define F94_READBIT(Reg,Pin) (Reg & (1 << Pin))
-#define F94_WRITEPORT(Reg,value) (Reg = value)
+#define F94_WRITEPORT(Reg,value) (Reg |= value)
 
 
 void F94_void_DIO_init_pin(char Reg , char pin , char dir);
